@@ -5,15 +5,17 @@ require_relative "desserts.rb"
 include SendGrid
 
 
-
+#home page
 get '/' do 
 	erb :index
 end
 
+#contact us page
 get '/contactus' do
 	erb :contact
 end
 
+#contact us page email - user can email me through this email form.
 post '/contact' do
 	@email = params[:email]
 	@context = params[:context]
@@ -31,7 +33,8 @@ post '/contact' do
 	redirect '/'
 end
 
-
+#main page subscribe form - user can put in their email to recieve email from me. 
+#can possibly change @subscription to something like a catalog
 post '/subscription' do
 
 	@email = params[:email]
@@ -51,6 +54,7 @@ post '/subscription' do
 end
 
 
+# could probably set up the @my_cakes array so that it can be used with .each to loop through for html context rendering.
 get '/cakes' do
 	@angel = Cake.new("Angel Cake", 25, "Angel food cake, or angel cake, is a type of sponge cake made with egg whites, flour, and sugar. A whipping agent, such as cream of tartar, is commonly added. It differs from other cakes because it uses no butter.", "../images/angelcake.jpg")
 	@red_velvet = Cake.new("Red Velvet Cake", 30, "Red velvet cake is traditionally a red, red-brown, or 'mahogany' or 'maroon' colored chocolate layer cake, layered with white cream cheese or ermine icing. The cake is commonly served on Christmas or Valentine's Day.", "../images/redvelvetcake.jpg")
@@ -59,6 +63,7 @@ get '/cakes' do
 
 	erb :cakes
 end
+
 
 get '/muffins' do
 	@blueberry = Muffin.new("Blueberry Muffin", 7, "Blueberry Muffin makes good breakfast", "../images/blueberrymuff.jpg")

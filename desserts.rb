@@ -1,3 +1,14 @@
+
+
+# classes for muffins, cookies, cake.
+
+#JUST a thought.
+
+# could possibly have a bakery class that has 3 empty arrays for cake,muffin and cookie with add function to add the objects into
+#each array according to type. 
+# could possibly use the bakery array to render html?
+
+
 class Muffin
 	attr_accessor :price, :info, :name, :pic
 	def initialize(name,price,info,pic)
