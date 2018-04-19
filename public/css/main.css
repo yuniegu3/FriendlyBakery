@@ -1,0 +1,12 @@
+.card-content {
+	height: 200px;
+	overflow: scroll;
+}
+
+body {
+	background-color: lightblue;
+}
+
+.main-color {
+	background-color: beige;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Friendly Bakery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+</head>
+<body>
+
+<nav>
+	<div class="nav-wrapper">
+      <a href="/" class="brand-logo center">Friendly Bakery</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="active"><a href="cookies">Cookies</a></li>
+        <li><a href="cakes">Cakes</a></li>
+        <li><a href="muffins">Muffins</a></li>
+        <li><a href="contactus">Contact Us</a></li>
+      </ul>
+    </div>
+</nav>
+
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="../images/cookies.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="../images/pbcookie.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="../images/oatmealcookie.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="../images/cookie.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="../images/cook.jpg"></a>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m8 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src=<%=@chocolate_chip.pic%> height=305>
+          <a class="btn-floating halfway-fab waves-effect waves-light pink"><i class="material-icons">+</i></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title pink-text text-darken-2"><strong><%=@chocolate_chip.name%></strong></span>
+          <p><%=@chocolate_chip.info%></p>
+          <p> $<%=@chocolate_chip.price%>.00 </p>
+        </div>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col s12 m8 l4">
+      <div class="card">
+        <div class="card-image" >
+          <img src=<%=@peanut_butter.pic%> height=305>
+          <a class="btn-floating halfway-fab waves-effect waves-light pink"><i class="material-icons">+</i></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title pink-text text-darken-2"><strong><%=@peanut_butter.name%></strong></span>
+          <p><%=@peanut_butter.info%></p>
+          <p> $<%=@peanut_butter.price%>.00 </p>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col s12 m8 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src=<%=@oatmeal.pic%>>
+          <a class="btn-floating halfway-fab waves-effect waves-light pink"><i class="material-icons">+</i></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title pink-text text-darken-2" ><strong><%=@oatmeal.name%></strong></span>
+          <p><%=@oatmeal.info%></p>
+          <p> $<%=@oatmeal.price%>.00 </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>  
+  </div>  
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+ <script type="text/javascript" src="../main.js"></script>
+</body>
+</html>

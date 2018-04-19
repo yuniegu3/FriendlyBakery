@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Friendly Bakery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+</head>
+<body>
+
+<nav>
+	<div class="nav-wrapper">
+      <a href="/" class="brand-logo center">Friendly Bakery</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="cookies">Cookies</a></li>
+        <li><a href="cakes">Cakes</a></li>
+        <li><a href="muffins">Muffins</a></li>
+        <li class="active"><a href="contactus">Contact Us</a></li>
+      </ul>
+    </div>
+</nav>
+
+<div class="container">
+<p> If you have any questions or concerns, please contact us using the form below.
+(Approx. time for response is 24 years. Please be patient.)	</p>
+
+
+<form action="/contact" method="POST">
+<div>
+<label for="email_address">Email address</label>
+<input type="email" name="email" id="email_address" placeholder="name@example.com">
+</div>
+<div>
+<label for="text_area">Context</label>
+<textarea id="text_area" name="context" rows="20"></textarea>
+</div>
+<button type="submit">Submit</button>
+</form>
+</div>
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+ <script type="text/javascript" src="../main.js"></script>
+</body>
+</html>
+
