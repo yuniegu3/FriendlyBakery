@@ -9,10 +9,12 @@
 </head>
 <body class="main-color">
 
+
 <nav>
-	<div class="nav-wrapper">
+  <div class="nav-wrapper">
       <a href="/" class="brand-logo center">Friendly Bakery</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down">
         <li><a href="cookies">Cookies</a></li>
         <li><a href="cakes">Cakes</a></li>
         <li><a href="muffins">Muffins</a></li>
@@ -21,18 +23,23 @@
     </div>
 </nav>
 
-
-
+ <ul class="sidenav" id="mobile-demo">
+        <li><a href="cookies">Cookies</a></li>
+        <li><a href="cakes">Cakes</a></li>
+        <li><a href="muffins">Muffins</a></li>
+        <li><a href="contactus">Contact Us</a></li>
+      </ul>
+       
   <div class="slider">
     <ul class="slides">
-      <li>
+      <li class="blue">
         <img src="../images/cake1.jpg">
         <div class="caption center-align">
           <h3 class="pink-text text-darken-2">Cakes!</h3>
           <h5 class="pink-text text-darken-2">Check our custom designed cakes made especially for your needs. </h5>
         </div>
       </li>
-      <li>
+      <li class="blue">
         <img src="../images/muffin5.jpg">
         <div class="caption left-align">
           <h3 class="brown darken-4">Muffins!</h3>
@@ -58,14 +65,19 @@
 
 
 
+<div class="container">
+<p class="brown-text"> " The products being sold in Friendly Bakery will be various cakes, cookies and muffins. They will all be unique, and will be baked daily to maintain highest quality. Catering and deliveries will also be available under some circumstances. "</p>
+</div>
+
 
 <div class="container">
 <form action="/subscription" method="POST">
 <div>
 
+
 <p> Please fill out your email below to recieve exclusive emails from Friendly Bakery.</p>
 <label for="email_address">Email address</label>
-<input type="email" class="form-control" name="email" id="email_address" placeholder="name@example.com">
+<input type="email" name="email" placeholder="name@example.com">
 </div>
 <button type="submit">Submit</button>
 </form>
